@@ -1,5 +1,5 @@
 {
-    "bg": "media/bg.jpg",
+    "bg": "https://raw.githubusercontent.com/vercel/next.js/canary/examples/image-component/public/mountains.jpg",
     "title": "Quiz CSS da Alura",
     "description": "Teste seus conhecimentos sobre trivia Pokémon e veremos se você se tornará um mestre!",
     "questions": [
