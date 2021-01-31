@@ -35,10 +35,10 @@ export default function Footer(props) {
       <p>
         Orgulhosamente criado durante
         {' '}
-        a
+        a Imersão React da 
         {' '}
         <a href="https://www.alura.com.br/">
-          <span>Imersão React da Alura</span>
+          <span>Alura</span>
         </a>
       </p>
     </FooterWrapper>
