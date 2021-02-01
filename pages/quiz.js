@@ -1,7 +1,7 @@
 /* eslint-disable arrow-body-style */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import db from '../db.json';
 import Button from '../src/components/Button';
 import GitHubCorner from '../src/components/GitHubCorner';
@@ -11,7 +11,12 @@ import QuizContainer from '../src/components/QuizContainer';
 import QuizLogo from '../src/components/QuizLogo';
 import Widget from '../src/components/Widget';
 
-function QuestionWidget({ question, totalQuestions, questionIndex }) {
+function QuestionWidget({
+  question,
+  totalQuestions,
+  questionIndex,
+  onSubmit,
+}) {
   const questionId = `question__${questionIndex}`;
   return (
     <Widget>
@@ -35,7 +40,13 @@ function QuestionWidget({ question, totalQuestions, questionIndex }) {
         <h2>{question.title}</h2>
 
         <p>{question.description}</p>
-        <form>
+
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            onSubmit();
+          }}
+        >
 
           {question.alternatives.map((alternative, i) => {
             const alternativeId = `alternative__${i}`;
@@ -53,7 +64,7 @@ function QuestionWidget({ question, totalQuestions, questionIndex }) {
               </Widget.Topic>
             );
           })}
-          <Button>
+          <Button type="submit">
             Confirm
           </Button>
 
@@ -70,10 +81,27 @@ const screenStates = {
 };
 
 export default function QuizPage() {
-  const screenState = screenStates.QUIZ;
+  const [screenState, setScreenState] = useState(screenStates.LOADING);
   const totalQuestions = db.questions.length;
-  const questionIndex = 0;
+  const [currentQuestion, setCurrentQuestion] = useState(0); // <= inicializa do indice 0
+  const questionIndex = currentQuestion;
   const question = db.questions[questionIndex];
+
+  useEffect(() => {
+    // aqui seria um fetch()...
+    setTimeout(() => {
+      setScreenState(screenStates.QUIZ);
+    }, 1 * 1000);
+    // [] <- vazio = didMount()
+  }, []);
+
+  function handleQuizSubmit() {
+    const nextQuestion = questionIndex + 1;
+
+    return nextQuestion < totalQuestions
+      ? setCurrentQuestion(questionIndex + 1)
+      : setScreenState(screenStates.RESULT);
+  }
 
   return (
     <QuizBackground backgroundImage={db.bg}>
@@ -85,6 +113,7 @@ export default function QuizPage() {
             question={question}
             questionIndex={questionIndex}
             totalQuestions={totalQuestions}
+            onSubmit={handleQuizSubmit}
           />
         )}
 
