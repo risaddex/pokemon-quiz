@@ -27,7 +27,7 @@
       }
     ],
     "external": [
-      ""
+      "https://pokemon-quiz.risaddex.vercel.app/"
     ],
     "theme": {
       "colors": {
