@@ -24,9 +24,10 @@ export default function Home() {
         <QuizLogo />
         <Widget
           as={motion.section}
+          transtion={{ delay: 0, duration: 0.5 }}
           variants={{
-            show: { opacity: 1 },
-            hidden: { opacity: 0 },
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
           }}
           initial="hidden"
           animate="show"
@@ -53,7 +54,16 @@ export default function Home() {
           </Widget.Content>
         </Widget>
 
-        <Widget>
+        <Widget
+          as={motion.section}
+          transtion={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Content>
             <h1>Quizes da Galera</h1>
             <ul>

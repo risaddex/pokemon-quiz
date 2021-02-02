@@ -7,7 +7,7 @@ import QuizScreen from '../../src/screens/Quiz';
 export default function QuizDaGalera({ externalDB }) {
   return (
     <ThemeProvider theme={externalDB.theme}>
-      Desafio da galere
+      {/* Desafio da galere */}
       <QuizScreen
         externalQuestions={externalDB.questions}
         externalBg={externalDB.bg}
