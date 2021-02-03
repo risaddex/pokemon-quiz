@@ -1,28 +1,126 @@
 {
+    "title": "Poké Quiz!",
     "bg": "main_bg.jpg",
-    "title": "Quiz CSS da Alura",
     "description": "Teste seus conhecimentos sobre trivia Pokémon e veremos se você se tornará um mestre!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "",
+        "title": "Qual destes pokemons é o #1 na National Pokedex?",
         "description": "Essa é pra aquecer",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Squirtle",
+          "Charmander",
+          "Bulbasaur",
+          "Pikachu"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "",
+        "title": "Pokemon é uma abreviação para:",
+        "description": "Quero ver!",
+        "answer": 1,
+        "alternatives": [
+          "Potatoes Monsters",
+          "Pocket Monsters",
+          "Pokerus Monsta",
+          "Pokedex Monsters"
+        ]
+      },
+      {
+        "image": "",
+        "title": "Qual pokemon originalmente foi criado para ser lendário?",
+        "description": "Dica: extremespeed",
+        "answer": 2,
+        "alternatives": [
+          "Armaldo",
+          "Clefable",
+          "Arcanine",
+          "Gyarados"
+        ]
+      },
+      {
+        "image": "",
+        "title": "Quantas evoluções diferentes o Eevee possui ?",
+        "description": "Esse é indeciso!",
+        "answer": 1,
+        "alternatives": [
+          "9",
+          "8",
+          "7",
+          "6"
+        ]
+      },
+      {
+        "image": "",
+        "title": "Qual era o nome em inglês original para Vulpix ?",
+        "description": "Prefiro a Ninetales!",
+        "answer": 2,
+        "alternatives": [
+          "Lilfox",
+          "Firefox",
+          "Foxfire",
+          "Cutiefox"
+        ]
+      },
+      {
+        "image": "",
+        "title": "Qual destes pokemons pode aprender praticamente qualquer golpe do jogo ?",
+        "description": "Já usei muito como utility!",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "Smeargle",
+          "Mew",
+          "Mewtwo",
+          "Jynx"
+        ]
+      },
+      {
+        "image": "",
+        "title": "Quais personagens do jogo têm seus nomes em referência à arvores ?",
+        "description": "Outro easter egg, haha!",
+        "answer": 1,
+        "alternatives": [
+          "Os policiais",
+          "Os professores de cada região",
+          "Os líderes de ginásio",
+          "As enfermeiras"
+        ]
+      },
+      {
+        "image": "",
+        "title": "Qual desses pokemons foi nomeado em referência à mestres das artes marciais?",
+        "description": "Um dos muitos easter eggs",
+        "answer": 3,
+        "alternatives": [
+           "Hariyama",
+           "Conkeldurr",
+           "Spinarak",
+           "Hitmonlee"
+        ]
+      },
+      {
+        "image": "",
+        "title": "Qual destes pokemons já foi mascote da franquia antes do Pikachu?",
+        "description": "Essa poucos sabiam!",
+        "answer": 2,
+        "alternatives": [
+          "Poliwag",
+          "Ivysaur",
+          "Clefairy",
+          "Rayquaza"
+        ]
+      },
+      {
+        "image": "",
+        "title": "Qual destes trios lendários foi baseado em 'Os três Mosqueteiros'?",
+        "description": "Um por todos...",
+        "answer": 3,
+        "alternatives": [
+          "Entei, Suicune e Raikou",
+          "Registeel, Regice e Regirock",
+          "Landorus, Thundurus e Tornadus",
+          "Virizion, Cobalion e Terrakion"
         ]
       }
     ],
@@ -40,4 +138,4 @@
       },
       "borderRadius": "4px"
     }
-  }
+  } 

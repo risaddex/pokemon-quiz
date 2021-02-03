@@ -2,8 +2,10 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useEffect, useState } from 'react';
+
 import db from '../../db.json';
 import AlternativesForm from '../../src/components/AlternativesForm';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
 import Button from '../../src/components/Button';
 import GitHubCorner from '../../src/components/GitHubCorner';
 import LoadingWidget from '../../src/components/LoadingWidget';
@@ -58,6 +60,7 @@ function QuestionWidget({
 
   return (
     <Widget>
+      <BackLinkArrow href="/" />
       <Widget.Header>
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}

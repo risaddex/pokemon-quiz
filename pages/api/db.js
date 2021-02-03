@@ -1,6 +1,6 @@
 import db from '../../db.json';
 
-export default function dbHandler(req, res) {
+function dbHandler(req, res) {
   if (req.method === 'OPTIONS') {
     res.status(200).end();
     return;
@@ -12,3 +12,5 @@ export default function dbHandler(req, res) {
 
   res.json(db);
 }
+// permite que compartilhamos nosso db com outros (CORS)
+export default dbHandler;

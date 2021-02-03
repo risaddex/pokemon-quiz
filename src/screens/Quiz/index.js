@@ -3,6 +3,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useEffect, useState } from 'react';
 // import db from '../../db.json';
+import BackLinkArrow from '../../components/BackLinkArrow';
 import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import GitHubCorner from '../../components/GitHubCorner';
@@ -55,10 +56,12 @@ function QuestionWidget({
   const [isQuestionSubmited, setQuestionSubmited] = useState();
   const questionId = `question__${questionIndex}`;
   const isCorrect = selectedAlternative === question.answer;
+  // const hasAlternativeSelected == selectedAlternative !== undefined // not necessary
 
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>

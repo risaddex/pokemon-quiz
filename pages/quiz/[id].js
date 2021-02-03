@@ -4,7 +4,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import QuizScreen from '../../src/screens/Quiz';
 
-export default function QuizDaGalera({ externalDB }) {
+function QuizDaGalera({ externalDB }) {
   return (
     <ThemeProvider theme={externalDB.theme}>
       {/* Desafio da galere */}
@@ -18,7 +18,7 @@ export default function QuizDaGalera({ externalDB }) {
 }
 
 export async function getServerSideProps(context) {
-  const [projectName, githubUser] = context.query.id.split('___');
+  const [projectName, githubUser] = context.query.id.split('__');
   const externalDB = await fetch(`https://${projectName}.${githubUser}.vercel.app/api/db`)
     .then((response) => {
       if (response.ok) {
@@ -40,3 +40,5 @@ export async function getServerSideProps(context) {
     },
   };
 }
+
+export default QuizDaGalera;

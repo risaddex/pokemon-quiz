@@ -14,7 +14,7 @@ import QuizContainer from '../src/components/QuizContainer';
 import QuizLogo from '../src/components/QuizLogo';
 import Widget from '../src/components/Widget';
 
-export default function Home() {
+function Home() {
   const router = useRouter();
   const [name, setName] = useState('');
 
@@ -23,6 +23,7 @@ export default function Home() {
       <QuizContainer>
         <QuizLogo />
         <Widget
+          // https://www.framer.com/api/motion
           as={motion.section}
           transtion={{ delay: 0, duration: 0.5 }}
           variants={{
@@ -42,7 +43,7 @@ export default function Home() {
             }}
             >
               <Input
-                name="nomeDousuaris"
+                name="userName"
                 placeholder="Diz aí seu nome"
                 onChange={(e) => setName(e.target.value)}
                 value={name}
@@ -53,7 +54,6 @@ export default function Home() {
             </form>
           </Widget.Content>
         </Widget>
-
         <Widget
           as={motion.section}
           transtion={{ delay: 0.5, duration: 0.5 }}
@@ -75,10 +75,10 @@ export default function Home() {
                   .split('.');
 
                 return (
-                  <li key={`__${i * 3.1}`}>
+                  <li key={`__${i * 3}`}>
                     <Widget.Topic
                       as={Link}
-                      href={`/quiz/${projectName}___${githubUser}`}
+                      href={`/quiz/${projectName}__${githubUser}`}
                     >
                       {`${githubUser}/${projectName}`}
                     </Widget.Topic>
@@ -95,3 +95,5 @@ export default function Home() {
     </QuizBackground>
   );
 }
+
+export default Home;
