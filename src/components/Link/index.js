@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 function Link({ children, href, ...props }) {
   return (
-    <NextLink href={href} passHref>
+    <NextLink href={href} passHref isDisabled>
       <a {...props}>
         {children}
       </a>
@@ -18,7 +18,6 @@ function Link({ children, href, ...props }) {
 Link.propTypes = {
   children: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
-
 };
 
 export default Link;

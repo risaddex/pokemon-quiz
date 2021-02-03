@@ -17,6 +17,7 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         Tela de resultado
       </Widget.Header>
 

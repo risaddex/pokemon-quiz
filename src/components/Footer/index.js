@@ -33,7 +33,7 @@ export default function Footer(props) {
         <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
       </a>
       <p>
-        Orgulhosamente criado durante
+        Criado durante
         {' '}
         a Imersão React da 
         {' '}

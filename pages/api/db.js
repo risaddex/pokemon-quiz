@@ -8,7 +8,7 @@ function dbHandler(req, res) {
 
   res.setHeader('Acess-Control-Allow-Credentials', true);
   res.setHeader('Acess-Control-Allow-Origin', '*');
-  res.setHeader('Acess-Control-Allow-Methods', 'GET, OPTIONS, PATCH, DELETE, POST, PUT');
+  res.setHeader('Acess-Control-Allow-Methods', 'GET, OPTIONS, PATCH, POST');
 
   res.json(db);
 }

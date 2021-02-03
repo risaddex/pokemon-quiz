@@ -78,7 +78,14 @@ function Home() {
                   <li key={`__${i * 3}`}>
                     <Widget.Topic
                       as={Link}
-                      href={`/quiz/${projectName}__${githubUser}`}
+                      href={name.length !== 0
+                        ? `/quiz/${projectName}__${githubUser}`
+                        : '#'}
+                      style={
+                        name.length === 0
+                          ? { cursor: 'not-allowed', backgroundColor: 'gray' }
+                          : {}
+                      }
                     >
                       {`${githubUser}/${projectName}`}
                     </Widget.Topic>

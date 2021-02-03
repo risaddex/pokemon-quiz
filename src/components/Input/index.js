@@ -22,6 +22,7 @@ export default function Input({ onChange, placeholder, ...props }) {
       <InputBase
         placeholder={placeholder}
         onChange={onChange}
+        maxLength="32"
         {...props}
       />
     </div>
