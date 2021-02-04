@@ -80,7 +80,7 @@ function Home() {
                       as={Link}
                       href={name.length !== 0
                         ? `/quiz/${projectName}__${githubUser}`
-                        : '#'}
+                        : '/'}
                       style={
                         name.length === 0
                           ? { cursor: 'not-allowed', backgroundColor: 'gray' }

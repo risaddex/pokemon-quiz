@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useEffect, useState } from 'react';
-// import db from '../../db.json';
+import db from '../../../db.json';
 import BackLinkArrow from '../../components/BackLinkArrow';
 import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
@@ -141,7 +141,7 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 
-export default function QuizPage({ externalQuestions, externalBg }) {
+export default function QuizPage({ externalQuestions = db.questions, externalBg }) {
   const [screenState, setScreenState] = useState(screenStates.LOADING);
   const [results, setResults] = useState([]);
   const totalQuestions = externalQuestions.length;

@@ -4,7 +4,8 @@
     "description": "Teste seus conhecimentos sobre trivia Pokémon e veremos se você se tornará um mestre!",
     "questions": [
       {
-        "image": "",
+        "image": "https://media.giphy.com/media/PqujYLRQaBuEw/giphy.gif",
+        "imgDesc": "squirtle, bulbasaur e charmander rindo",
         "title": "Qual destes pokemons é o #1 na National Pokedex?",
         "description": "Essa é pra aquecer",
         "answer": 2,
@@ -16,7 +17,8 @@
         ]
       },
       {
-        "image": "",
+        "image": "https://media.giphy.com/media/6nWhy3ulBL7GSCvKw6/giphy.gif",
+        "imgDesc": "Pikachu com a boca aberta e cara de surpresa (meme)",
         "title": "Pokemon é uma abreviação para:",
         "description": "Quero ver!",
         "answer": 1,
@@ -28,7 +30,8 @@
         ]
       },
       {
-        "image": "",
+        "image": "https://media.giphy.com/media/ysYvIll9qWCNq/giphy.gif",
+        "imgDesc": "Um magikarp se debatendo",
         "title": "Qual pokemon originalmente foi criado para ser lendário?",
         "description": "Dica: extremespeed",
         "answer": 2,
@@ -40,7 +43,8 @@
         ]
       },
       {
-        "image": "",
+        "image": "https://media.giphy.com/media/sIV0wFDrsKNxe/giphy.gif",
+        "imgDesc": "Eevee com os olhos brilhando",
         "title": "Quantas evoluções diferentes o Eevee possui ?",
         "description": "Esse é indeciso!",
         "answer": 1,
@@ -52,7 +56,8 @@
         ]
       },
       {
-        "image": "",
+        "image": "https://media.giphy.com/media/isrZZ7YHBlrQQ/giphy.gif",
+        "imgDesc": "Vulpix sentada como um cachorro",
         "title": "Qual era o nome em inglês original para Vulpix ?",
         "description": "Prefiro a Ninetales!",
         "answer": 2,
@@ -64,7 +69,8 @@
         ]
       },
       {
-        "image": "",
+        "image": "https://thumbs.gfycat.com/InfiniteMarriedAkitainu-max-1mb.gif",
+        "imgDesc": "Um metapod sendo chutado pra longe por um Scorbunny",
         "title": "Qual destes pokemons pode aprender praticamente qualquer golpe do jogo ?",
         "description": "Já usei muito como utility!",
         "answer": 0,
@@ -76,7 +82,8 @@
         ]
       },
       {
-        "image": "",
+        "image": "https://pa1.narvii.com/6358/3d1e3ecd9e5c9190ef52cb1c0b913193dbed4e29_128.gif",
+        "imgDesc": "",
         "title": "Quais personagens do jogo têm seus nomes em referência à arvores ?",
         "description": "Outro easter egg, haha!",
         "answer": 1,
@@ -88,7 +95,8 @@
         ]
       },
       {
-        "image": "",
+        "image": "https://66.media.tumblr.com/tumblr_m5xpl0KNP41qczibyo1_500.gif",
+        "imgDesc": "Um Sawk arremensando um Throh pelos ares",
         "title": "Qual desses pokemons foi nomeado em referência à mestres das artes marciais?",
         "description": "Um dos muitos easter eggs",
         "answer": 3,
@@ -100,7 +108,8 @@
         ]
       },
       {
-        "image": "",
+        "image": "https://i.pinimg.com/originals/80/db/8a/80db8a89f0b6f861691dddd2df5f879c.gif",
+        "imgDesc": "Buneary e Piplup como líderes de torcida",
         "title": "Qual destes pokemons já foi mascote da franquia antes do Pikachu?",
         "description": "Essa poucos sabiam!",
         "answer": 2,
@@ -112,7 +121,8 @@
         ]
       },
       {
-        "image": "",
+        "image": "https://media.giphy.com/media/md3TNZtG6n9E4/giphy.gif",
+        "imgDesc": "Zapdos, Moltres e Articuno dentro de um carro 'no batidão'",
         "title": "Qual destes trios lendários foi baseado em 'Os três Mosqueteiros'?",
         "description": "Um por todos...",
         "answer": 3,

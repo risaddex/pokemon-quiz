@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useEffect, useState } from 'react';
-
+import Image from 'next/image';
 import db from '../../db.json';
 import AlternativesForm from '../../src/components/AlternativesForm';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
@@ -58,6 +58,18 @@ function QuestionWidget({
   const questionId = `question__${questionIndex}`;
   const isCorrect = selectedAlternative === question.answer;
 
+  // function loadImg(src) {
+  //   fetch(src)
+  //     .then(resp => resp.blob())
+  //     .then(blob => {
+  //       let url = URL.createObjectURL(blob);
+  //       let img = new Image();
+  //       let int = setInterval(() => console.log('imagem carregando'), 2000)
+  //       img.onload = () => clearInterval(int);
+  //       img.src = url;
+  //     });
+  // }
+
   return (
     <Widget>
       <BackLinkArrow href="/" />
@@ -67,15 +79,20 @@ function QuestionWidget({
         </h3>
       </Widget.Header>
 
-      <img
+      <Image
+        rel="preload"
         src={question.image}
-        alt="Desc"
-        style={{
-          width: '100%',
-          height: '150px',
-          objectFit: 'cover',
-        }}
+        alt={`${question.imgDesc}`}
+        layout="responsive"
+        width={700}
+        height={450}
+        // style={{
+        //   width: '100%',
+        //   height: 'auto',
+        //   objectFit: 'auto',
+        // }}
       />
+      {/* {loadImg(question.Image)} */}
 
       <Widget.Content>
         <h2>{question.title}</h2>
